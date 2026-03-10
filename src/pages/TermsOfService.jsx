@@ -74,14 +74,8 @@ function TermsOfService() {
           {t('terms.s5.5.p2')}
         </p>
 
-        <h2>{t('terms.s6.title')} <span className="legal__app-tag">Crescia</span></h2>
+        <h2>{t('terms.s6.title')}</h2>
         <p>{t('terms.s6.p')}</p>
-        <ul>
-          <li>{t('terms.s6.l1')}</li>
-          <li>{t('terms.s6.l2')}</li>
-          <li>{t('terms.s6.l3')}</li>
-        </ul>
-        <p>{t('terms.s6.p2')}</p>
 
         <h2>{t('terms.s7.title')}</h2>
         <p>{t('terms.s7.p')}</p>
