@@ -26,7 +26,7 @@ function PrivacyPolicy() {
 
         <h2>{t('privacy.s2.title')}</h2>
 
-        <h3>{t('privacy.s2.1.title')} <span className="legal__app-tag">Crescia</span></h3>
+        <h3>{t('privacy.s2.1.title')}</h3>
         <p>{t('privacy.s2.1.p')}</p>
 
         <h3>{t('privacy.s2.2.title')}</h3>
@@ -66,7 +66,6 @@ function PrivacyPolicy() {
           </thead>
           <tbody>
             <tr><td>{t('privacy.s3.t1.purpose')}</td><td>{t('privacy.s3.t1.data')}</td><td>{t('privacy.s3.t1.legal')}</td></tr>
-            <tr><td>{t('privacy.s3.t2.purpose')}</td><td>{t('privacy.s3.t2.data')}</td><td>{t('privacy.s3.t2.legal')}</td></tr>
             <tr><td>{t('privacy.s3.t3.purpose')}</td><td>{t('privacy.s3.t3.data')}</td><td>{t('privacy.s3.t3.legal')}</td></tr>
             <tr><td>{t('privacy.s3.t4.purpose')}</td><td>{t('privacy.s3.t4.data')}</td><td>{t('privacy.s3.t4.legal')}</td></tr>
             <tr><td>{t('privacy.s3.t5.purpose')}</td><td>{t('privacy.s3.t5.data')}</td><td>{t('privacy.s3.t5.legal')}</td></tr>
@@ -76,11 +75,7 @@ function PrivacyPolicy() {
 
         <h2>{t('privacy.s4.title')}</h2>
 
-        <h3>{t('privacy.s4.1.title')} <span className="legal__app-tag">Yantar</span></h3>
-        <p>{t('privacy.s4.1.p')}</p>
-
-        <h3>{t('privacy.s4.2.title')} <span className="legal__app-tag">Crescia</span></h3>
-        <p>{t('privacy.s4.2.p')}</p>
+        <p>{t('privacy.s4.p')}</p>
 
         <h2>{t('privacy.s5.title')}</h2>
         <p>{t('privacy.s5.p')}</p>
@@ -89,16 +84,12 @@ function PrivacyPolicy() {
             <tr><th>{t('privacy.s5.table.service')}</th><th>{t('privacy.s5.table.provider')}</th><th>{t('privacy.s5.table.purpose')}</th><th>{t('privacy.s5.table.apps')}</th></tr>
           </thead>
           <tbody>
-            <tr><td>App Store / StoreKit</td><td>Apple</td><td>{t('privacy.s5.t1')}</td><td>All</td></tr>
+            <tr><td>App Store / StoreKit</td><td>Apple</td><td>{t('privacy.s5.t1')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>HealthKit</td><td>Apple</td><td>{t('privacy.s5.t2')}</td><td>Yantar</td></tr>
-            <tr><td>CloudKit / iCloud</td><td>Apple</td><td>{t('privacy.s5.t3')}</td><td>Yantar</td></tr>
+            <tr><td>CloudKit / iCloud</td><td>Apple</td><td>{t('privacy.s5.t3')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>ActivityKit</td><td>Apple</td><td>{t('privacy.s5.t4')}</td><td>Yantar</td></tr>
-            <tr><td>WidgetKit</td><td>Apple</td><td>{t('privacy.s5.t5')}</td><td>All</td></tr>
-            <tr><td>UserNotifications</td><td>Apple</td><td>{t('privacy.s5.t6')}</td><td>All</td></tr>
-            <tr><td>Firebase Auth</td><td>Google</td><td>{t('privacy.s5.t7')}</td><td>Crescia</td></tr>
-            <tr><td>Firebase Firestore</td><td>Google</td><td>{t('privacy.s5.t8')}</td><td>Crescia</td></tr>
-            <tr><td>Sign in with Apple</td><td>Apple</td><td>{t('privacy.s5.t9')}</td><td>Crescia</td></tr>
-            <tr><td>Google Sign-In</td><td>Google</td><td>{t('privacy.s5.t9')}</td><td>Crescia</td></tr>
+            <tr><td>WidgetKit</td><td>Apple</td><td>{t('privacy.s5.t5')}</td><td>{t('privacy.s5.all')}</td></tr>
+            <tr><td>UserNotifications</td><td>Apple</td><td>{t('privacy.s5.t6')}</td><td>{t('privacy.s5.all')}</td></tr>
           </tbody>
         </table>
         <p>{t('privacy.s5.bottom')}</p>
@@ -109,7 +100,6 @@ function PrivacyPolicy() {
         <h2>{t('privacy.s7.title')}</h2>
         <ul>
           <li dangerouslySetInnerHTML={{ __html: t('privacy.s7.l1') }} />
-          <li dangerouslySetInnerHTML={{ __html: t('privacy.s7.l2') }} />
           <li dangerouslySetInnerHTML={{ __html: t('privacy.s7.l3') }} />
         </ul>
 
