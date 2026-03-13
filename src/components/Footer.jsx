@@ -14,6 +14,7 @@ function Footer() {
         <div className="footer__links">
           <Link to="/privacy">{t('footer.privacy')}</Link>
           <Link to="/terms">{t('footer.terms')}</Link>
+          <Link to="/support">{t('footer.support')}</Link>
           <a href="mailto:support@griselhub.com">{t('footer.contact')}</a>
         </div>
         <p className="footer__copy">&copy; {new Date().getFullYear()} GriselHub. {t('footer.rights')}</p>
