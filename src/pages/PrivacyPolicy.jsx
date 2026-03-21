@@ -87,7 +87,6 @@ function PrivacyPolicy() {
             <tr><td>App Store / StoreKit</td><td>Apple</td><td>{t('privacy.s5.t1')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>HealthKit</td><td>Apple</td><td>{t('privacy.s5.t2')}</td><td>Yantar</td></tr>
             <tr><td>CloudKit / iCloud</td><td>Apple</td><td>{t('privacy.s5.t3')}</td><td>{t('privacy.s5.all')}</td></tr>
-            <tr><td>ActivityKit</td><td>Apple</td><td>{t('privacy.s5.t4')}</td><td>Yantar</td></tr>
             <tr><td>WidgetKit</td><td>Apple</td><td>{t('privacy.s5.t5')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>UserNotifications</td><td>Apple</td><td>{t('privacy.s5.t6')}</td><td>{t('privacy.s5.all')}</td></tr>
           </tbody>
