@@ -41,6 +41,9 @@ function Support() {
         <h3>{t('support.faq.q5')}</h3>
         <p>{t('support.faq.a5')}</p>
 
+        <h3>{t('support.faq.q6')}</h3>
+        <p>{t('support.faq.a6')}</p>
+
         <h2>{t('support.subscriptions.title')}</h2>
         <p>{t('support.subscriptions.p')}</p>
         <ol>
