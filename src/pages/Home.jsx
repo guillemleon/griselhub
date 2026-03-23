@@ -11,7 +11,7 @@ const apps = [
     gradient: 'linear-gradient(135deg, #d1734a, #a85a3a)',
     accentColor: '#d1734a',
     featureKeys: ['yantar.f.timer', 'yantar.f.stages', 'yantar.f.healthkit', 'yantar.f.live', 'yantar.f.widgets', 'yantar.f.academy'],
-    appStoreUrl: null,
+    appStoreUrl: 'https://apps.apple.com/es/app/yantar/id6760302054',
   },
   {
     name: 'Crescia',
@@ -21,7 +21,7 @@ const apps = [
     gradient: 'linear-gradient(135deg, #4a90d1, #3a6fa8)',
     accentColor: '#4a90d1',
     featureKeys: ['crescia.f.budget', 'crescia.f.categories', 'crescia.f.piggy', 'crescia.f.sync', 'crescia.f.widgets', 'crescia.f.currency'],
-    appStoreUrl: null,
+    appStoreUrl: 'https://apps.apple.com/es/app/crescia/id6760351477',
   },
 ]
 
