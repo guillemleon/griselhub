@@ -59,6 +59,28 @@ function PrivacyPolicy() {
           <li dangerouslySetInnerHTML={{ __html: t('privacy.s2.6.l5') }} />
         </ul>
 
+        <h3>{t('privacy.s2.7.title')} <span className="legal__app-tag">{t('privacy.s2.7.tag')}</span></h3>
+        <p>{t('privacy.s2.7.p1')}</p>
+        <p><strong>{t('privacy.s2.7.subtitle1')}</strong></p>
+        <ul>
+          <li>{t('privacy.s2.7.l1')}</li>
+          <li>{t('privacy.s2.7.l2')}</li>
+          <li>{t('privacy.s2.7.l3')}</li>
+        </ul>
+        <p><strong>{t('privacy.s2.7.subtitle2')}</strong></p>
+        <ul>
+          <li>{t('privacy.s2.7.l4')}</li>
+          <li>{t('privacy.s2.7.l5')}</li>
+          <li>{t('privacy.s2.7.l6')}</li>
+          <li>{t('privacy.s2.7.l7')}</li>
+        </ul>
+        <p dangerouslySetInnerHTML={{ __html: t('privacy.s2.7.p2') }} />
+        <p dangerouslySetInnerHTML={{ __html: t('privacy.s2.7.p3') }} />
+        <p dangerouslySetInnerHTML={{ __html: t('privacy.s2.7.p4') }} />
+        <p dangerouslySetInnerHTML={{ __html: t('privacy.s2.7.p5') }} />
+        <p>{t('privacy.s2.7.p6')}</p>
+        <p>{t('privacy.s2.7.p7')}</p>
+
         <h2>{t('privacy.s3.title')}</h2>
         <table>
           <thead>
@@ -69,6 +91,7 @@ function PrivacyPolicy() {
             <tr><td>{t('privacy.s3.t3.purpose')}</td><td>{t('privacy.s3.t3.data')}</td><td>{t('privacy.s3.t3.legal')}</td></tr>
             <tr><td>{t('privacy.s3.t4.purpose')}</td><td>{t('privacy.s3.t4.data')}</td><td>{t('privacy.s3.t4.legal')}</td></tr>
             <tr><td>{t('privacy.s3.t5.purpose')}</td><td>{t('privacy.s3.t5.data')}</td><td>{t('privacy.s3.t5.legal')}</td></tr>
+            <tr><td>{t('privacy.s3.t6.purpose')}</td><td>{t('privacy.s3.t6.data')}</td><td>{t('privacy.s3.t6.legal')}</td></tr>
           </tbody>
         </table>
         <p>{t('privacy.s3.p')}</p>
@@ -89,6 +112,8 @@ function PrivacyPolicy() {
             <tr><td>CloudKit / iCloud</td><td>Apple</td><td>{t('privacy.s5.t3')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>WidgetKit</td><td>Apple</td><td>{t('privacy.s5.t5')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>UserNotifications</td><td>Apple</td><td>{t('privacy.s5.t6')}</td><td>{t('privacy.s5.all')}</td></tr>
+            <tr><td>Anthropic API (Claude AI)</td><td>Anthropic</td><td>{t('privacy.s5.t7')}</td><td>Crescia</td></tr>
+            <tr><td>Cloudflare Workers</td><td>Cloudflare</td><td>{t('privacy.s5.t8')}</td><td>Crescia</td></tr>
           </tbody>
         </table>
         <p>{t('privacy.s5.bottom')}</p>

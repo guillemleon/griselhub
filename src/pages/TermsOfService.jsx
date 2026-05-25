@@ -46,6 +46,10 @@ function TermsOfService() {
           <li>{t('terms.s4.l2')}</li>
           <li>{t('terms.s4.l3')}</li>
           <li>{t('terms.s4.l4')}</li>
+          <li dangerouslySetInnerHTML={{ __html: t('terms.s4.l5') }} />
+          <li>{t('terms.s4.l6')}</li>
+          <li dangerouslySetInnerHTML={{ __html: t('terms.s4.l7') }} />
+          <li>{t('terms.s4.l8')}</li>
         </ul>
 
         <h2>{t('terms.s5.title')}</h2>
