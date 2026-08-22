@@ -18,6 +18,9 @@ function AppCard({ app }) {
           ))}
         </div>
         <div className="app-card__actions">
+          {!app.appStoreUrl && (
+            <span className="app-card__coming-soon">{t('apps.comingSoon')}</span>
+          )}
           {app.appStoreUrl && (
             <a href={app.appStoreUrl} className="app-card__store-btn" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">

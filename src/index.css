@@ -128,6 +128,17 @@ main { flex: 1; }
   background: var(--color-accent-soft); color: var(--color-accent); font-weight: 500;
 }
 .app-card__actions { margin-top: 20px; }
+.app-card__coming-soon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--color-text-secondary, #999);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
 .app-card__store-btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 10px 20px; border-radius: var(--radius-sm);

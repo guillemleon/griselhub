@@ -14,6 +14,16 @@ const apps = [
     appStoreUrl: 'https://apps.apple.com/es/app/yantar/id6760302054',
   },
   {
+    name: 'Fulcrum',
+    icon: '/icons/fulcrum-icon.png',
+    taglineKey: 'fulcrum.tagline',
+    descriptionKey: 'fulcrum.description',
+    gradient: 'linear-gradient(135deg, #ace57a, #93cb60)',
+    accentColor: '#93cb60',
+    featureKeys: ['fulcrum.f.routines', 'fulcrum.f.watch', 'fulcrum.f.healthkit', 'fulcrum.f.calories', 'fulcrum.f.progress', 'fulcrum.f.languages'],
+    // TODO: set the App Store URL once the app is live.
+  },
+  {
     name: 'Crescia',
     icon: '/icons/crescia_icon.png',
     taglineKey: 'crescia.tagline',

@@ -25,6 +25,7 @@ function TermsOfService() {
         <ul>
           <li><strong>Yantar</strong> — {t('terms.s2.yantar')}</li>
           <li><strong>Crescia</strong> — {t('terms.s2.crescia')}</li>
+          <li><strong>Fulcrum</strong> — {t('terms.s2.fulcrum')}</li>
         </ul>
         <p>{t('terms.s2.p2')}</p>
 

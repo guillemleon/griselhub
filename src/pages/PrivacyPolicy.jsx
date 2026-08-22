@@ -81,6 +81,17 @@ function PrivacyPolicy() {
         <p>{t('privacy.s2.7.p6')}</p>
         <p>{t('privacy.s2.7.p7')}</p>
 
+        <h3>{t('privacy.s2.8.title')} <span className="legal__app-tag">Fulcrum</span></h3>
+        <p>{t('privacy.s2.8.p1')}</p>
+        <ul>
+          <li>{t('privacy.s2.8.l1')}</li>
+          <li>{t('privacy.s2.8.l2')}</li>
+          <li>{t('privacy.s2.8.l3')}</li>
+          <li>{t('privacy.s2.8.l4')}</li>
+          <li>{t('privacy.s2.8.l5')}</li>
+        </ul>
+        <p dangerouslySetInnerHTML={{ __html: t('privacy.s2.8.p2') }} />
+
         <h2>{t('privacy.s3.title')}</h2>
         <table>
           <thead>
@@ -108,7 +119,9 @@ function PrivacyPolicy() {
           </thead>
           <tbody>
             <tr><td>App Store / StoreKit</td><td>Apple</td><td>{t('privacy.s5.t1')}</td><td>{t('privacy.s5.all')}</td></tr>
-            <tr><td>HealthKit</td><td>Apple</td><td>{t('privacy.s5.t2')}</td><td>Yantar</td></tr>
+            <tr><td>HealthKit</td><td>Apple</td><td>{t('privacy.s5.t2')}</td><td>Yantar, Fulcrum</td></tr>
+            <tr><td>WatchConnectivity</td><td>Apple</td><td>{t('privacy.s5.t9')}</td><td>Fulcrum</td></tr>
+            <tr><td>Open Food Facts</td><td>Open Food Facts</td><td>{t('privacy.s5.t10')}</td><td>Fulcrum</td></tr>
             <tr><td>CloudKit / iCloud</td><td>Apple</td><td>{t('privacy.s5.t3')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>WidgetKit</td><td>Apple</td><td>{t('privacy.s5.t5')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>UserNotifications</td><td>Apple</td><td>{t('privacy.s5.t6')}</td><td>{t('privacy.s5.all')}</td></tr>
