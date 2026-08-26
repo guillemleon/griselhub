@@ -89,6 +89,7 @@ function PrivacyPolicy() {
           <li>{t('privacy.s2.8.l3')}</li>
           <li>{t('privacy.s2.8.l4')}</li>
           <li>{t('privacy.s2.8.l5')}</li>
+          <li>{t('privacy.s2.8.l6')}</li>
         </ul>
         <p dangerouslySetInnerHTML={{ __html: t('privacy.s2.8.p2') }} />
 
@@ -122,6 +123,8 @@ function PrivacyPolicy() {
             <tr><td>HealthKit</td><td>Apple</td><td>{t('privacy.s5.t2')}</td><td>Yantar, Fulcrum</td></tr>
             <tr><td>WatchConnectivity</td><td>Apple</td><td>{t('privacy.s5.t9')}</td><td>Fulcrum</td></tr>
             <tr><td>Open Food Facts</td><td>Open Food Facts</td><td>{t('privacy.s5.t10')}</td><td>Fulcrum</td></tr>
+            <tr><td>Anthropic API (Claude AI)</td><td>Anthropic</td><td>{t('privacy.s5.t11')}</td><td>Fulcrum</td></tr>
+            <tr><td>Cloudflare Workers</td><td>Cloudflare</td><td>{t('privacy.s5.t12')}</td><td>Fulcrum</td></tr>
             <tr><td>CloudKit / iCloud</td><td>Apple</td><td>{t('privacy.s5.t3')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>WidgetKit</td><td>Apple</td><td>{t('privacy.s5.t5')}</td><td>{t('privacy.s5.all')}</td></tr>
             <tr><td>UserNotifications</td><td>Apple</td><td>{t('privacy.s5.t6')}</td><td>{t('privacy.s5.all')}</td></tr>
