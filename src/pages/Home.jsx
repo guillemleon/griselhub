@@ -18,8 +18,8 @@ const apps = [
     icon: '/icons/fulcrum-icon.png',
     taglineKey: 'fulcrum.tagline',
     descriptionKey: 'fulcrum.description',
-    gradient: 'linear-gradient(135deg, #ace57a, #93cb60)',
-    accentColor: '#93cb60',
+    gradient: 'linear-gradient(135deg, #b9f387, #93cb60)',
+    accentColor: '#b9f387',
     featureKeys: ['fulcrum.f.routines', 'fulcrum.f.exercises', 'fulcrum.f.scan', 'fulcrum.f.watch', 'fulcrum.f.healthkit', 'fulcrum.f.calories', 'fulcrum.f.progress', 'fulcrum.f.languages'],
     // TODO: set the App Store URL once the app is live.
   },
