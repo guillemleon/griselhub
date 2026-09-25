@@ -2,6 +2,7 @@
 // (scripts/prerender.mjs) to bake each page's <head>, and by the app to keep
 // document.title in sync during client-side navigation.
 import { translations } from './i18n/translations.js'
+import { APPS, screenshotUrls } from './apps.js'
 
 export const SITE_URL = 'https://griselhub.com'
 export const CONTACT_EMAIL = 'support@griselhub.com'
@@ -30,35 +31,12 @@ export const PAGES = {
   },
 }
 
+for (const app of APPS) PAGES[`/${app.slug}`] = app.seo
+
 export const NOT_FOUND = {
   title: 'Page not found — griselhub',
   description: 'This page does not exist. Explore Fulcrum, Crescia and Yantar, the privacy-first iOS apps by griselhub.',
 }
-
-// The apps, for structured data (kept in sync with the list on the home page).
-const APPS = [
-  {
-    name: 'Fulcrum',
-    key: 'fulcrum',
-    category: 'HealthApplication',
-    icon: '/icons/fulcrum-icon.png',
-    url: 'https://apps.apple.com/es/app/fulcrum-gym-y-calistenia/id6804208652',
-  },
-  {
-    name: 'Crescia',
-    key: 'crescia',
-    category: 'FinanceApplication',
-    icon: '/icons/crescia_icon.png',
-    url: 'https://apps.apple.com/es/app/crescia/id6760351477',
-  },
-  {
-    name: 'Yantar',
-    key: 'yantar',
-    category: 'HealthApplication',
-    icon: '/icons/yantar-icon.png',
-    url: 'https://apps.apple.com/es/app/yantar/id6760302054',
-  },
-]
 
 /** schema.org JSON-LD graph: the studio, the website, and the three apps. */
 export function structuredData(path) {
@@ -80,22 +58,23 @@ export function structuredData(path) {
     publisher: { '@id': `${SITE_URL}/#organization` },
   }
   const graph = [org, website]
-  if (path === '/') {
-    for (const app of APPS) {
-      graph.push({
-        '@type': 'MobileApplication',
-        name: app.name,
-        operatingSystem: 'iOS',
-        applicationCategory: app.category,
-        description: translations.en[`${app.key}.description`],
-        image: `${SITE_URL}${app.icon}`,
-        installUrl: app.url,
-        url: app.url,
-        offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-        publisher: { '@id': `${SITE_URL}/#organization` },
-      })
-    }
-  }
+  const appNode = (app) => ({
+    '@type': 'MobileApplication',
+    name: app.name,
+    operatingSystem: 'iOS',
+    applicationCategory: app.category,
+    description: translations.en[`${app.slug}.description`],
+    image: `${SITE_URL}${app.icon}`,
+    screenshot: screenshotUrls(app, 'en').map((u) => `${SITE_URL}${u}`),
+    installUrl: app.appStoreUrl,
+    url: `${SITE_URL}/${app.slug}`,
+    sameAs: app.appStoreUrl,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+  })
+  if (path === '/') graph.push(...APPS.map(appNode))
+  const current = APPS.find((a) => path === `/${a.slug}`)
+  if (current) graph.push(appNode(current))
   return { '@context': 'https://schema.org', '@graph': graph }
 }
 

@@ -265,14 +265,18 @@ main { flex: 1; }
 .app-row__features li:not(:last-child)::after { content: '/'; margin: 0 10px; color: var(--line-strong); }
 .app-row__actions { padding-top: 2px; }
 
-/* Apple-style "Download on the App Store" button */
+/* Apple's white "Download on the App Store" badge (their variant for dark backgrounds) */
 .store-btn {
   display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
   height: 46px; padding: 0 18px 0 14px; border-radius: 10px;
-  background: #000; color: #fff; border: 1px solid rgba(255, 255, 255, 0.28);
-  transition: border-color 0.2s, background 0.2s;
+  background: #fff; color: #000; border: 1px solid #fff;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
-.store-btn:hover { border-color: rgba(255, 255, 255, 0.6); color: #fff; }
+.store-btn:hover {
+  background: #f2f2f2; color: #000;
+  transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+}
+.store-btn:active { transform: translateY(0); box-shadow: none; }
 .store-btn__text { display: flex; flex-direction: column; line-height: 1.05; }
 .store-btn__small { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.01em; opacity: 0.85; }
 .store-btn__big { font-size: 1.02rem; font-weight: 600; letter-spacing: -0.01em; }
@@ -301,6 +305,114 @@ main { flex: 1; }
   font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; letter-spacing: -0.015em;
 }
 .value p { margin-top: 10px; font-size: 0.93rem; line-height: 1.7; color: var(--text-2); }
+
+/* ---------- Home rows → detail pages ---------- */
+/* Whole row is clickable: the name link's ::after covers the row (same area
+   as the hover background); the App Store button sits above it. */
+.app-row { cursor: pointer; }
+.app-row__link { color: var(--text); }
+.app-row__link::after {
+  content: ''; position: absolute; top: 0; bottom: 0; left: -24px; right: -24px;
+  border-radius: var(--radius); z-index: 1;
+}
+.app-row__link:focus-visible { outline: none; }
+.app-row__link:focus-visible::after { outline: 2px solid var(--amber); outline-offset: -2px; }
+.app-row__actions { position: relative; z-index: 2; }
+.app-row__more {
+  display: inline-block; margin-top: 14px;
+  font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-2);
+  transition: color 0.2s, transform 0.2s;
+}
+.app-row:hover .app-row__more { color: var(--text); transform: translateX(3px); }
+.app-row:hover .app-row__link { color: #fff; }
+
+/* ---------- App detail page ---------- */
+.app-hero {
+  position: relative; overflow: hidden;
+  padding: 136px 0 88px; border-bottom: 1px solid var(--line);
+}
+.app-hero::after {
+  content: ''; position: absolute; pointer-events: none;
+  width: 820px; height: 820px; right: -260px; top: -380px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--app-accent) 16%, transparent), transparent 65%);
+}
+.app-hero .container { position: relative; z-index: 1; }
+.app-hero__back {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-2);
+}
+.app-hero__back:hover { color: var(--text); }
+.app-hero__grid {
+  display: flex; align-items: center; gap: 28px; margin-top: 40px;
+}
+.app-hero__icon {
+  width: 112px; height: 112px; border-radius: 26px; flex-shrink: 0;
+  box-shadow: 0 0 0 1px var(--line), 0 18px 44px rgba(0, 0, 0, 0.5);
+}
+.app-hero__name {
+  margin-top: 10px;
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 1; letter-spacing: -0.035em;
+}
+.app-hero__tagline { margin-top: 10px; font-size: 1.1rem; color: var(--text-2); }
+.app-hero__body {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 28px;
+  margin-top: 36px;
+}
+.app-hero__description { font-size: 1.08rem; line-height: 1.7; color: var(--text-2); max-width: 40rem; }
+
+.app-gallery__head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 32px; }
+.app-gallery__head .section-title { margin-top: 0; }
+.app-gallery__nav { display: flex; gap: 8px; }
+.app-gallery__nav button {
+  width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+  background: transparent; color: var(--text); border: 1px solid var(--line-strong);
+  cursor: pointer; transition: border-color 0.2s, background 0.2s;
+}
+.app-gallery__nav button:hover { border-color: var(--text-2); background: var(--surface); }
+/* full-bleed rail that starts aligned with the container */
+.app-gallery__rail {
+  display: flex; gap: 20px; overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px max(var(--gutter), calc((100vw - var(--max-width)) / 2 + var(--gutter))) 24px;
+  scroll-padding-inline: max(var(--gutter), calc((100vw - var(--max-width)) / 2 + var(--gutter)));
+  scrollbar-width: none;
+}
+.app-gallery__rail::-webkit-scrollbar { display: none; }
+.app-gallery__shot {
+  flex: 0 0 auto; width: clamp(200px, 24vw, 280px); height: auto;
+  border-radius: 22px; scroll-snap-align: start;
+  box-shadow: 0 0 0 1px var(--line), 0 20px 48px rgba(0, 0, 0, 0.45);
+  background: var(--surface);
+}
+
+.app-features {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 40px; list-style: none; border-top: 1px solid var(--line);
+}
+.app-features li {
+  display: flex; align-items: center; gap: 12px;
+  padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 1rem;
+}
+.app-features li::before {
+  content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--app-accent); flex-shrink: 0;
+}
+.app-cta { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-top: 44px; }
+.app-cta__link { font-size: 0.9rem; color: var(--text-2); }
+.app-cta__link:hover { color: var(--text); }
+
+.app-others { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 36px; }
+.app-other {
+  display: flex; align-items: center; gap: 16px; padding: 18px 20px;
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface);
+  color: var(--text); transition: border-color 0.2s, background 0.2s;
+}
+.app-other:hover { border-color: var(--line-strong); background: var(--surface-2); }
+.app-other img { width: 56px; height: 56px; border-radius: 13px; }
+.app-other > span { flex: 1; display: flex; flex-direction: column; }
+.app-other strong { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; letter-spacing: -0.015em; }
+.app-other > span > span { font-size: 0.86rem; color: var(--text-2); }
+.app-other svg { color: var(--text-2); }
 
 /* ---------- Work with us ---------- */
 .work { scroll-margin-top: 64px; }
@@ -429,8 +541,14 @@ main { flex: 1; }
   .values-grid { grid-template-columns: 1fr; }
   .value, .value + .value { padding: 28px 0; border-left: none; }
   .value + .value { border-top: 1px solid var(--line); }
-  .app-row::before { left: -12px; right: -12px; }
+  .app-row::before, .app-row__link::after { left: -12px; right: -12px; }
   .work__panel { padding: 36px 24px; border-radius: 16px; }
+  .app-hero { padding: 104px 0 64px; }
+  .app-hero__grid { gap: 18px; }
+  .app-hero__icon { width: 80px; height: 80px; border-radius: 19px; }
+  .app-hero__body { grid-template-columns: 1fr; gap: 28px; }
+  .app-gallery__nav { display: none; }
+  .app-gallery__shot { width: 62vw; border-radius: 18px; }
   .legal { padding: 110px var(--gutter) 64px; }
   .legal__inner table { font-size: 0.78rem; }
   .legal__inner th, .legal__inner td { padding: 8px; }

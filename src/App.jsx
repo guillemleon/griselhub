@@ -7,6 +7,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import Support from './pages/Support'
 import NotFound from './pages/NotFound'
+import AppPage from './pages/AppPage'
+import { APPS } from './apps'
 import { metaFor } from './seo'
 
 function App() {
@@ -27,6 +29,9 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/support" element={<Support />} />
+          {APPS.map((app) => (
+            <Route key={app.slug} path={`/${app.slug}`} element={<AppPage app={app} />} />
+          ))}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

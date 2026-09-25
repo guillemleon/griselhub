@@ -66,7 +66,14 @@ function page(route, meta, opts) {
   return html
 }
 
-const files = { '/': 'index.html', '/privacy': 'privacy.html', '/terms': 'terms.html', '/support': 'support.html' }
+const { APPS } = await import(pathToFileURL(resolve(root, 'src/apps.js')).href)
+const files = {
+  '/': 'index.html',
+  ...Object.fromEntries(APPS.map((a) => [`/${a.slug}`, `${a.slug}.html`])),
+  '/privacy': 'privacy.html',
+  '/terms': 'terms.html',
+  '/support': 'support.html',
+}
 
 for (const [route, file] of Object.entries(files)) {
   writeFileSync(resolve(dist, file), page(route, PAGES[route], { jsonLd: structuredData(route) }))
@@ -84,7 +91,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${Object.keys(files)
   .map((r) => {
     const loc = r === '/' ? `${SITE_URL}/` : `${SITE_URL}${r}`
-    const priority = r === '/' ? '1.0' : r === '/support' ? '0.6' : '0.4'
+    const priority = r === '/' ? '1.0' : APPS.some((a) => r === `/${a.slug}`) ? '0.9' : r === '/support' ? '0.6' : '0.4'
     return `  <url><loc>${loc}</loc><lastmod>${today}</lastmod><priority>${priority}</priority></url>`
   })
   .join('\n')}

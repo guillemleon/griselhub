@@ -1,0 +1,19 @@
+// Cloudflare Worker (static assets only) that serves griselhub.com.
+// Deploy:  npm run deploy   (builds + prerenders, then uploads dist/)
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "griselhub",
+  "compatibility_date": "2026-09-23",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "griselhub.com", "custom_domain": true },
+    { "pattern": "www.griselhub.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./dist",
+    // /privacy → privacy.html (no trailing-slash redirect); unknown URLs get
+    // dist/404.html with a real 404 status instead of the homepage.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

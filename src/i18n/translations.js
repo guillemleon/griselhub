@@ -1,5 +1,14 @@
 export const translations = {
   en: {
+    // App detail pages
+    'app.details': "View details",
+    'app.back': "All apps",
+    'app.screenshots': "Screenshots",
+    'app.features': "Features",
+    'app.more': "More from griselhub",
+    'app.prev': "Previous",
+    'app.next': "Next",
+
     // 404
     'notfound.title': "Page not found",
     'notfound.text': "The page you're looking for doesn't exist or has moved.",
@@ -347,6 +356,15 @@ export const translations = {
   },
 
   es: {
+    // App detail pages
+    'app.details': "Ver detalles",
+    'app.back': "Todas las apps",
+    'app.screenshots': "Capturas",
+    'app.features': "Funciones",
+    'app.more': "Más de griselhub",
+    'app.prev': "Anterior",
+    'app.next': "Siguiente",
+
     // 404
     'notfound.title': "Página no encontrada",
     'notfound.text': "La página que buscas no existe o se ha movido.",
@@ -678,6 +696,15 @@ export const translations = {
   },
 
   fr: {
+    // App detail pages
+    'app.details': "Voir les détails",
+    'app.back': "Toutes les apps",
+    'app.screenshots': "Captures d'écran",
+    'app.features': "Fonctionnalités",
+    'app.more': "Plus de griselhub",
+    'app.prev': "Précédent",
+    'app.next': "Suivant",
+
     // 404
     'notfound.title': "Page introuvable",
     'notfound.text': "La page que vous cherchez n'existe pas ou a été déplacée.",
@@ -1009,6 +1036,15 @@ export const translations = {
   },
 
   ca: {
+    // App detail pages
+    'app.details': "Veure detalls",
+    'app.back': "Totes les apps",
+    'app.screenshots': "Captures",
+    'app.features': "Funcions",
+    'app.more': "Més de griselhub",
+    'app.prev': "Anterior",
+    'app.next': "Següent",
+
     // 404
     'notfound.title': "Pàgina no trobada",
     'notfound.text': "La pàgina que busques no existeix o s’ha mogut.",
@@ -1340,6 +1376,15 @@ export const translations = {
   },
 
   de: {
+    // App detail pages
+    'app.details': "Details ansehen",
+    'app.back': "Alle Apps",
+    'app.screenshots': "Screenshots",
+    'app.features': "Funktionen",
+    'app.more': "Mehr von griselhub",
+    'app.prev': "Zurück",
+    'app.next': "Weiter",
+
     // 404
     'notfound.title': "Seite nicht gefunden",
     'notfound.text': "Die gesuchte Seite existiert nicht oder wurde verschoben.",
@@ -1671,6 +1716,15 @@ export const translations = {
   },
 
   hu: {
+    // App detail pages
+    'app.details': "Részletek",
+    'app.back': "Összes app",
+    'app.screenshots': "Képernyőképek",
+    'app.features': "Funkciók",
+    'app.more': "Még több a griselhubtól",
+    'app.prev': "Előző",
+    'app.next': "Következő",
+
     // 404
     'notfound.title': "Az oldal nem található",
     'notfound.text': "A keresett oldal nem létezik, vagy áthelyezték.",
@@ -2002,6 +2056,15 @@ export const translations = {
   },
 
   it: {
+    // App detail pages
+    'app.details': "Vedi dettagli",
+    'app.back': "Tutte le app",
+    'app.screenshots': "Screenshot",
+    'app.features': "Funzionalità",
+    'app.more': "Altro da griselhub",
+    'app.prev': "Precedente",
+    'app.next': "Successivo",
+
     // 404
     'notfound.title': "Pagina non trovata",
     'notfound.text': "La pagina che cerchi non esiste o è stata spostata.",
@@ -2333,6 +2396,15 @@ export const translations = {
   },
 
   pt: {
+    // App detail pages
+    'app.details': "Ver detalhes",
+    'app.back': "Todas as apps",
+    'app.screenshots': "Capturas de ecrã",
+    'app.features': "Funcionalidades",
+    'app.more': "Mais da griselhub",
+    'app.prev': "Anterior",
+    'app.next': "Seguinte",
+
     // 404
     'notfound.title': "Página não encontrada",
     'notfound.text': "A página que procuras não existe ou foi movida.",
