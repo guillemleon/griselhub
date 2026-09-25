@@ -14,14 +14,14 @@ function detectLanguage() {
 }
 
 export const LANGUAGES = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷' },
-  { code: 'ca', label: 'Català', flag: '🏳️' },
-  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-  { code: 'hu', label: 'Magyar', flag: '🇭🇺' },
-  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
-  { code: 'pt', label: 'Português', flag: '🇵🇹' },
+  { code: 'en', label: 'English' },
+  { code: 'es', label: 'Español' },
+  { code: 'fr', label: 'Français' },
+  { code: 'ca', label: 'Català' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'hu', label: 'Magyar' },
+  { code: 'it', label: 'Italiano' },
+  { code: 'pt', label: 'Português' },
 ]
 
 export function LanguageProvider({ children }) {

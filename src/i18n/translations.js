@@ -1,5 +1,29 @@
 export const translations = {
   en: {
+    // Work with us
+    'nav.work': "Contact",
+    'work.eyebrow': "work with us",
+    'work.title': "Have an app in mind?",
+    'work.text': "We design and build native iOS apps — from the first sketch to the App Store. The same care and privacy-first engineering behind Yantar, Crescia and Fulcrum, applied to your idea.",
+    'work.cta': "Start a project",
+    'work.subject': "App project",
+    'work.s1': "iPhone & Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widgets & HealthKit",
+    'work.s4': "Subscriptions",
+    'work.s5': "App Store launch",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "independent iOS studio",
+    'hero.fact1': "apps on the App Store",
+    'hero.fact2': "accounts required",
+    'hero.fact3': "analytics SDKs",
+    'apps.eyebrow': "the apps",
+    'apps.lede': "Three focused tools for your health, your training and your money — built to keep your data on your device.",
+    'apps.download': "Download on the",
+    'values.eyebrow': "principles",
+    'footer.tagline': "Privacy-first iOS apps, built by one independent studio.",
+
     // Navbar
     'nav.apps': 'Apps',
     'nav.privacy': 'Privacy',
@@ -318,6 +342,30 @@ export const translations = {
   },
 
   es: {
+    // Work with us
+    'nav.work': "Contacto",
+    'work.eyebrow': "trabaja con nosotros",
+    'work.title': "¿Tienes una app en mente?",
+    'work.text': "Diseñamos y desarrollamos apps nativas para iOS, desde el primer boceto hasta el App Store. El mismo cuidado y la misma ingeniería centrada en la privacidad de Yantar, Crescia y Fulcrum, aplicados a tu idea.",
+    'work.cta': "Empezar un proyecto",
+    'work.subject': "Proyecto de app",
+    'work.s1': "iPhone y Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widgets y HealthKit",
+    'work.s4': "Suscripciones",
+    'work.s5': "Lanzamiento en el App Store",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "estudio iOS independiente",
+    'hero.fact1': "apps en el App Store",
+    'hero.fact2': "cuentas obligatorias",
+    'hero.fact3': "SDKs de analítica",
+    'apps.eyebrow': "las apps",
+    'apps.lede': "Tres herramientas enfocadas para tu salud, tu entrenamiento y tu dinero — hechas para que tus datos se queden en tu dispositivo.",
+    'apps.download': "Descárgalo en el",
+    'values.eyebrow': "principios",
+    'footer.tagline': "Apps iOS que priorizan tu privacidad, hechas por un estudio independiente.",
+
     'nav.apps': 'Apps',
     'nav.privacy': 'Privacidad',
     'nav.terms': 'Términos',
@@ -620,6 +668,30 @@ export const translations = {
   },
 
   fr: {
+    // Work with us
+    'nav.work': "Contact",
+    'work.eyebrow': "travaillons ensemble",
+    'work.title': "Vous avez une app en tête ?",
+    'work.text': "Nous concevons et développons des apps iOS natives, de la première esquisse à l'App Store. Le même soin et la même ingénierie centrée sur la confidentialité que Yantar, Crescia et Fulcrum, au service de votre idée.",
+    'work.cta': "Démarrer un projet",
+    'work.subject': "Projet d'app",
+    'work.s1': "iPhone et Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widgets et HealthKit",
+    'work.s4': "Abonnements",
+    'work.s5': "Lancement sur l'App Store",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "studio iOS indépendant",
+    'hero.fact1': "apps sur l'App Store",
+    'hero.fact2': "compte obligatoire",
+    'hero.fact3': "SDK d'analyse",
+    'apps.eyebrow': "les apps",
+    'apps.lede': "Trois outils ciblés pour votre santé, votre entraînement et votre argent — conçus pour que vos données restent sur votre appareil.",
+    'apps.download': "Télécharger dans",
+    'values.eyebrow': "principes",
+    'footer.tagline': "Des apps iOS respectueuses de la vie privée, créées par un studio indépendant.",
+
     'nav.apps': 'Apps',
     'nav.privacy': 'Confidentialité',
     'nav.terms': 'Conditions',
@@ -922,6 +994,30 @@ export const translations = {
   },
 
   ca: {
+    // Work with us
+    'nav.work': "Contacte",
+    'work.eyebrow': "treballa amb nosaltres",
+    'work.title': "Tens una app al cap?",
+    'work.text': "Dissenyem i desenvolupem apps natives per a iOS, des del primer esbós fins a l'App Store. La mateixa cura i la mateixa enginyeria centrada en la privacitat de Yantar, Crescia i Fulcrum, aplicades a la teva idea.",
+    'work.cta': "Començar un projecte",
+    'work.subject': "Projecte d'app",
+    'work.s1': "iPhone i Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widgets i HealthKit",
+    'work.s4': "Subscripcions",
+    'work.s5': "Llançament a l'App Store",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "estudi iOS independent",
+    'hero.fact1': "apps a l'App Store",
+    'hero.fact2': "comptes obligatoris",
+    'hero.fact3': "SDKs d'analítica",
+    'apps.eyebrow': "les apps",
+    'apps.lede': "Tres eines enfocades per a la teva salut, el teu entrenament i els teus diners — fetes perquè les teves dades es quedin al teu dispositiu.",
+    'apps.download': "Descarrega-ho a l'",
+    'values.eyebrow': "principis",
+    'footer.tagline': "Apps iOS que prioritzen la privacitat, fetes per un estudi independent.",
+
     'nav.apps': 'Apps',
     'nav.privacy': 'Privacitat',
     'nav.terms': 'Termes',
@@ -1224,6 +1320,30 @@ export const translations = {
   },
 
   de: {
+    // Work with us
+    'nav.work': "Kontakt",
+    'work.eyebrow': "mit uns arbeiten",
+    'work.title': "Du hast eine App-Idee?",
+    'work.text': "Wir gestalten und entwickeln native iOS-Apps — von der ersten Skizze bis in den App Store. Dieselbe Sorgfalt und dieselbe datenschutzorientierte Technik wie bei Yantar, Crescia und Fulcrum, für deine Idee.",
+    'work.cta': "Projekt starten",
+    'work.subject': "App-Projekt",
+    'work.s1': "iPhone & Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widgets & HealthKit",
+    'work.s4': "Abonnements",
+    'work.s5': "App-Store-Launch",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "unabhängiges iOS-Studio",
+    'hero.fact1': "Apps im App Store",
+    'hero.fact2': "Pflicht-Konten",
+    'hero.fact3': "Analyse-SDKs",
+    'apps.eyebrow': "die Apps",
+    'apps.lede': "Drei fokussierte Werkzeuge für deine Gesundheit, dein Training und dein Geld — gebaut, damit deine Daten auf deinem Gerät bleiben.",
+    'apps.download': "Laden im",
+    'values.eyebrow': "Prinzipien",
+    'footer.tagline': "Datenschutzfreundliche iOS-Apps von einem unabhängigen Studio.",
+
     'nav.apps': 'Apps',
     'nav.privacy': 'Datenschutz',
     'nav.terms': 'AGB',
@@ -1526,6 +1646,30 @@ export const translations = {
   },
 
   hu: {
+    // Work with us
+    'nav.work': "Kapcsolat",
+    'work.eyebrow': "dolgozz velünk",
+    'work.title': "Van egy app-ötleted?",
+    'work.text': "Natív iOS-appokat tervezünk és fejlesztünk az első vázlattól az App Store-ig. Ugyanaz a gondosság és adatvédelem-központú mérnöki munka, mint a Yantar, a Crescia és a Fulcrum mögött — a te ötletedre alkalmazva.",
+    'work.cta': "Projekt indítása",
+    'work.subject': "App-projekt",
+    'work.s1': "iPhone és Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widgetek és HealthKit",
+    'work.s4': "Előfizetések",
+    'work.s5': "Megjelenés az App Store-ban",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "független iOS-stúdió",
+    'hero.fact1': "app az App Store-ban",
+    'hero.fact2': "kötelező fiók",
+    'hero.fact3': "analitikai SDK",
+    'apps.eyebrow': "az appok",
+    'apps.lede': "Három célzott eszköz az egészségedhez, az edzésedhez és a pénzedhez — úgy építve, hogy az adataid az eszközödön maradjanak.",
+    'apps.download': "Letöltés az",
+    'values.eyebrow': "elvek",
+    'footer.tagline': "Adatvédelmet előtérbe helyező iOS-appok egy független stúdiótól.",
+
     'nav.apps': 'Appok',
     'nav.privacy': 'Adatvédelem',
     'nav.terms': 'Feltételek',
@@ -1828,6 +1972,30 @@ export const translations = {
   },
 
   it: {
+    // Work with us
+    'nav.work': "Contatti",
+    'work.eyebrow': "lavora con noi",
+    'work.title': "Hai un'app in mente?",
+    'work.text': "Progettiamo e sviluppiamo app iOS native, dal primo schizzo all'App Store. La stessa cura e la stessa ingegneria attenta alla privacy di Yantar, Crescia e Fulcrum, applicate alla tua idea.",
+    'work.cta': "Inizia un progetto",
+    'work.subject': "Progetto app",
+    'work.s1': "iPhone e Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widget e HealthKit",
+    'work.s4': "Abbonamenti",
+    'work.s5': "Lancio sull'App Store",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "studio iOS indipendente",
+    'hero.fact1': "app sull'App Store",
+    'hero.fact2': "account obbligatori",
+    'hero.fact3': "SDK di analisi",
+    'apps.eyebrow': "le app",
+    'apps.lede': "Tre strumenti mirati per la tua salute, il tuo allenamento e i tuoi soldi — pensati perché i tuoi dati restino sul tuo dispositivo.",
+    'apps.download': "Scarica su",
+    'values.eyebrow': "principi",
+    'footer.tagline': "App iOS che mettono la privacy al primo posto, create da uno studio indipendente.",
+
     'nav.apps': 'App',
     'nav.privacy': 'Privacy',
     'nav.terms': 'Termini',
@@ -2130,6 +2298,30 @@ export const translations = {
   },
 
   pt: {
+    // Work with us
+    'nav.work': "Contacto",
+    'work.eyebrow': "trabalha connosco",
+    'work.title': "Tens uma app em mente?",
+    'work.text': "Desenhamos e desenvolvemos apps iOS nativas, do primeiro esboço até à App Store. O mesmo cuidado e a mesma engenharia centrada na privacidade de Yantar, Crescia e Fulcrum, aplicados à tua ideia.",
+    'work.cta': "Começar um projeto",
+    'work.subject': "Projeto de app",
+    'work.s1': "iPhone e Apple Watch",
+    'work.s2': "SwiftUI",
+    'work.s3': "Widgets e HealthKit",
+    'work.s4': "Subscrições",
+    'work.s5': "Lançamento na App Store",
+
+    // Redesign 2026-09
+    'hero.eyebrow': "estúdio iOS independente",
+    'hero.fact1': "apps na App Store",
+    'hero.fact2': "contas obrigatórias",
+    'hero.fact3': "SDKs de análise",
+    'apps.eyebrow': "as apps",
+    'apps.lede': "Três ferramentas focadas na tua saúde, no teu treino e no teu dinheiro — feitas para que os teus dados fiquem no teu dispositivo.",
+    'apps.download': "Descarregar na",
+    'values.eyebrow': "princípios",
+    'footer.tagline': "Apps iOS que dão prioridade à privacidade, criadas por um estúdio independente.",
+
     'nav.apps': 'Apps',
     'nav.privacy': 'Privacidade',
     'nav.terms': 'Termos',
