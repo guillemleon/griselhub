@@ -1,5 +1,10 @@
 export const translations = {
   en: {
+    // 404
+    'notfound.title': "Page not found",
+    'notfound.text': "The page you're looking for doesn't exist or has moved.",
+    'notfound.home': "Back to the home page",
+
     // Work with us
     'nav.work': "Contact",
     'work.eyebrow': "work with us",
@@ -342,6 +347,11 @@ export const translations = {
   },
 
   es: {
+    // 404
+    'notfound.title': "Página no encontrada",
+    'notfound.text': "La página que buscas no existe o se ha movido.",
+    'notfound.home': "Volver al inicio",
+
     // Work with us
     'nav.work': "Contacto",
     'work.eyebrow': "trabaja con nosotros",
@@ -668,6 +678,11 @@ export const translations = {
   },
 
   fr: {
+    // 404
+    'notfound.title': "Page introuvable",
+    'notfound.text': "La page que vous cherchez n'existe pas ou a été déplacée.",
+    'notfound.home': "Retour à l'accueil",
+
     // Work with us
     'nav.work': "Contact",
     'work.eyebrow': "travaillons ensemble",
@@ -994,6 +1009,11 @@ export const translations = {
   },
 
   ca: {
+    // 404
+    'notfound.title': "Pàgina no trobada",
+    'notfound.text': "La pàgina que busques no existeix o s’ha mogut.",
+    'notfound.home': "Tornar a l'inici",
+
     // Work with us
     'nav.work': "Contacte",
     'work.eyebrow': "treballa amb nosaltres",
@@ -1320,6 +1340,11 @@ export const translations = {
   },
 
   de: {
+    // 404
+    'notfound.title': "Seite nicht gefunden",
+    'notfound.text': "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    'notfound.home': "Zur Startseite",
+
     // Work with us
     'nav.work': "Kontakt",
     'work.eyebrow': "mit uns arbeiten",
@@ -1646,6 +1671,11 @@ export const translations = {
   },
 
   hu: {
+    // 404
+    'notfound.title': "Az oldal nem található",
+    'notfound.text': "A keresett oldal nem létezik, vagy áthelyezték.",
+    'notfound.home': "Vissza a főoldalra",
+
     // Work with us
     'nav.work': "Kapcsolat",
     'work.eyebrow': "dolgozz velünk",
@@ -1972,6 +2002,11 @@ export const translations = {
   },
 
   it: {
+    // 404
+    'notfound.title': "Pagina non trovata",
+    'notfound.text': "La pagina che cerchi non esiste o è stata spostata.",
+    'notfound.home': "Torna alla home",
+
     // Work with us
     'nav.work': "Contatti",
     'work.eyebrow': "lavora con noi",
@@ -2298,6 +2333,11 @@ export const translations = {
   },
 
   pt: {
+    // 404
+    'notfound.title': "Página não encontrada",
+    'notfound.text': "A página que procuras não existe ou foi movida.",
+    'notfound.home': "Voltar ao início",
+
     // Work with us
     'nav.work': "Contacto",
     'work.eyebrow': "trabalha connosco",

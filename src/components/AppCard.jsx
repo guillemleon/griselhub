@@ -14,7 +14,7 @@ function AppCard({ app }) {
 
   return (
     <article className="app-row">
-      <img src={app.icon} alt="" className="app-row__icon" width="76" height="76" loading="lazy" />
+      <img src={app.icon} alt={`${app.name} app icon`} className="app-row__icon" width="76" height="76" loading="lazy" />
 
       <div className="app-row__body">
         <h3 className="app-row__name">{app.name}</h3>
